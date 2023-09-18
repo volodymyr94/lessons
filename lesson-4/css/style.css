@@ -1,0 +1,21 @@
+@import url("reset.css");
+
+p{
+	color: blue;
+}
+
+h1{
+	color:red;
+}
+
+h2{
+	color: green;
+}
+
+h3{
+	color: black
+}
+
+ol{
+	color: yellowgreen;
+}
