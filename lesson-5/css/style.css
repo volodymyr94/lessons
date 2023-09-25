@@ -1,0 +1,117 @@
+
+@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap");
+
+
+@import url("reset.css");
+
+
+/* @font-face {
+	font-family: "Agdasima";
+	src: url("../fonts/gnyrwn971.woff2") format("woff2"), 
+			url("../fonts/gnyrwn971.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+} */
+
+body{
+	font-family: Noto Sans, "Agdasima", sans-serif;
+	color: #7D7D7D;
+}
+
+.mane-page {}
+.title {
+	font-size: 52px;
+	text-align: center;
+	text-shadow: 5px 5px 3px #000;
+	font-weight: 700;
+}
+.sub-title {
+	font-size: 32px;
+	text-align: center;
+	text-decoration: line-through;
+	white-space: nowrap;
+	letter-spacing: 2px;
+	word-spacing: 10px;
+}
+.text p{
+	font-size: 18;
+	text-align: left;
+	text-indent: 20px;
+}
+.color-p{
+	color: rgba(213, 79, 79, 0.468);
+	text-align: justify;
+}
+.uppercase{
+	text-transform:uppercase;
+}
+.list {
+	font-style: oblique;
+}
+.item {
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+
+
+.cssonsulting {
+	font-family: Inter;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.46;
+	color: #7D7D7D;
+}
+.consulting-title {
+	color: #37393F;
+	font-family: Poppins;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.27; 
+	text-shadow: 0 0 0;
+	text-align: left;
+}
+
+.consulting-text p {
+	text-indent: 0;
+	
+}
+
+.consulting-sub-title {
+	color: #6B77E5;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27; 
+	text-decoration: none;
+	text-align: left;
+}
+
+.project {
+	color: #7D7D7D;
+	font-family: Inter;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.46;
+}
+.project-title {
+	color: #37393F;
+	font-family: Poppins;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.27;
+	text-shadow: 0 0 0;
+	text-align: left;
+}
+.project-text p {
+	text-indent: 0;
+}
+.project-list {
+	font-style: normal;
+}
+
+.project-item {
+	text-decoration: none;
+	font-weight: 400;
+}
