@@ -1,0 +1,193 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	font-family: "Inter", sans-serif;
+	color: #7D7D7D;
+	font-size: 18px;
+}
+
+/* /////////////////////////////.licencing//////////////////////////// */
+
+.title, .subtitle, .subtitle-2, .subtitle-3{
+	color: #37393F;
+	font-family: Poppins;
+	font-weight: 700;
+	line-height: 1.21;
+	}
+
+
+.licencing {
+	max-width: 1250px;
+	margin: 150px auto 150px auto;
+	padding: 0 15px;
+	
+}
+
+.blok1, .blok2, .blok-3{
+	margin-bottom: 100px;
+}
+.title {
+	text-align: center;
+	font-size: 60px;
+	margin-bottom: 70px;
+}
+.subtitle {
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+.subtitle-2 {
+	font-size: 30px;
+}
+.subtitle-3 {
+	font-size: 18px;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.text{
+	line-height: 1.46;
+	margin-bottom: 30px;
+}
+.text-blue{
+	color: #40DDB6;
+}
+span{
+	color: #40DDB6;
+}
+
+/* /////////////////////////////.project//////////////////////////// */
+
+.project{
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 0 15px;
+	margin-bottom: 150px;
+}
+.text p{
+	margin-bottom: 35px;
+}
+.list li{
+	margin-bottom: 30px;
+	margin-left: 40px;
+	font-weight: 500;
+}
+
+
+/* /////////////////////////////.clothing//////////////////////////// */
+
+
+.clothing {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 0 15px;
+	color: #807D7E;
+	font-family: Causten;
+	font-size: 20px;
+	line-height: 1.67;
+	letter-spacing: 0.4px;
+	margin-bottom: 150px;
+	}
+.clothing-title {
+	color: #3C4242;
+	font-family: Core Sans C;
+	font-size: 28px;
+	font-weight: 650;
+	line-height: 1.19;
+	letter-spacing: 0.56px;
+	margin-bottom: 30px;
+}
+.clothing-subtitle {
+	font-family: Core Sans C;
+	font-size: 20px;
+	font-weight: 650;
+	line-height: 1.67;
+	letter-spacing: 0.4px;
+	margin-bottom: 25px;
+}
+.clothing-text{
+	margin-bottom: 25px;
+}
+.clothing-text p{
+	margin-bottom: 20px;
+}
+.clothing-link{
+	font-family: Core Sans C;
+	font-weight: 650;
+}
+.clothing-span{
+	font-family: Core Sans C;
+	font-weight: 650;
+	color: inherit;
+}
+
+
+
+/* /////////////////////////////.develop//////////////////////////// */
+
+
+
+
+
+.develop {
+	max-width: 1130px;
+	margin: 0 auto;
+	padding: 0 15px;
+	color: #606060;
+	font-family: Cormorant Infant;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1.4;
+	}
+.develop-content {
+	display: inline-block;
+	max-width: 50%;
+	vertical-align: middle;
+	padding-right: 90px;
+}
+.develop-subtitle {
+	color: #D58417;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 20px;
+}
+.develop-title {
+	color: #000;
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 30px;
+}
+.develop-text {
+	color: #606060;
+	font-weight: 700;
+}
+.develop-photo {
+	display: inline-block;
+}
+.photo {
+	vertical-align: middle;
+}
+.hpoto-1 {
+	display: inline-block;
+	margin-right: 30px;
+	border: 1px solid #502203;
+	border-radius: 235px;
+}
+
+.hpoto-2 {
+	display: inline-block;
+	border: 1px solid #502203;
+	border-radius: 235px;
+
+}
+img{
+	border-radius: 235px;
+   margin-top: 10px;
+	margin-left: -10px;
+}
