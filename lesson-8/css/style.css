@@ -254,17 +254,18 @@ background: url('../img/arr-2.jpg') right center no-repeat;
 	max-width: 1240px;
 	margin: 0 auto 100px;
 	font-size: 0;
+	height: 615px;
 }
 .everyday-blok-1 {
-	max-width: 620px;
+	max-width: 50%;
 	display: inline-block;
 	background: url('../img/everyday-1.jpg') 0 0 no-repeat;
 	padding: 183px 74px 174px;
 	vertical-align: top;
 }
 .everyday-blok-2 {
-	width: 620px;
-	height: 620px;
+	width: 50%;
+	height: 100%;
 	display: inline-block;
 	background: url('../img/everyday-2.jpg') 0 0 no-repeat;
 }
