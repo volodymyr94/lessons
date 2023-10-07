@@ -287,16 +287,14 @@ background: url('../img/arr-2.jpg') right center no-repeat;
 	margin-bottom: 50px;
 }
 
-.everyday-block-link{
-	padding: 12px 44px;
-	background: #FFF;
-	display: inline-block;
-}
+
 .everyday-link {
 	color: #3C4242;
-	text-align: center;
 	font-family: Causten;
+	font-size: 18px;
 	font-weight: 600;
+	padding: 12px 44px;
+	background-color: #FFF;
+	border-radius: 10px;
 
 }
-
