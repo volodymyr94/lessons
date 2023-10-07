@@ -1,0 +1,302 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	font-family: "Inter", sans-serif;
+	color: #7D7D7D;
+	font-size: 18px;
+}
+/* ///////////////////////////practic/////////////////////////////////// */
+
+.practica {
+
+	margin-bottom: 100px;
+}
+.dox-1 {
+	width: 100%;
+	height: 150px;
+	background: rgb(17,1,163);
+	background: linear-gradient(90deg, rgba(17,1,163,1) 0%, rgba(201,3,190,0.30584733893557425) 50%, rgba(255,252,0,1) 100%);
+}
+.dox-2 {
+	background: url('../img/everyday-2.jpg') repeat-x;
+	background-attachment: fixed;
+	width: 100%;
+	height: 150px;
+
+}
+.dox-3 {
+	background: url('../img/data.jpg') center repeat;
+	width: 100%;
+	height: 150px;
+}
+.dox-4 {
+	width: 100%;
+	height: 150px;
+	background: url('../img/data.jpg')  0 0 / 200px no-repeat, url('../img/everyday-2.jpg') no-repeat, linear-gradient(90deg, rgba(17,1,163,1) 0%, rgba(201,3,190,0.30584733893557425) 50%, rgba(255,252,0,1) 100%);
+
+}
+.dox-5 {
+	background: url('../img/everyday-2.jpg');
+	background-size: contain;
+	width: 100%;
+	height: 150px;
+
+}
+
+
+
+
+
+/* ///////////////////////////about/////////////////////////////////// */
+
+.about {
+	max-width: 700px;
+	margin: 0 auto 100px;
+	padding: 0 15px;
+}
+.subtitle {
+	padding-left: 15px;
+	color: #37393F;
+	font-weight: 500;
+	background: url('../img/bg-1.jpg') 0 3px no-repeat;
+	margin-bottom: 16px;
+}
+.title {
+	color: #37393F;
+	font-family: Poppins;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+	margin-bottom: 20px;
+}
+.text{
+	margin-bottom: 20px;
+}
+.text p{
+	line-height: 1.46;
+	margin-bottom: 15px;
+}
+.list{
+	color: #37393F;
+	font-family: Poppins;
+	font-size: 20px;
+	margin-bottom: 43px;
+}
+
+.item{
+	margin-bottom: 10px;
+	padding-left: 35px;
+	background: url('../img/bg-2.jpg') 0 3px no-repeat;
+	line-height: 1.65;
+}
+.inline-blok {
+	display: inline-block;
+	max-width: 295px;
+	padding: 31px 32px;
+	border: 1px solid #E3E3E3;
+	margin-right: 10px;
+	margin-bottom: 37px;
+}
+.inline-blok-2{
+	background: url('../img/bg-3.jpg') 0 0 no-repeat;
+	padding-left: 58px;
+	
+}
+.inline-blok-3{
+	background: url('../img/bg-4.jpg') 0 0 no-repeat;
+	padding-left: 58px;
+}
+.inline-blok-title {
+	color: #37393F;
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+.inline-blok-text {
+	font-size: 16px;
+	line-height: 1.35;
+}
+.link{
+	color: #FFF;
+	font-weight: 600;
+	text-transform: capitalize;
+	background-color: #6B77E5;
+	padding: 21px 27px;
+	display: inline-block;
+}
+
+
+/* ///////////////////////////discover/////////////////////////////////// */
+
+
+.discover {
+	margin: 0 auto 100px;
+	padding: 0 15px;
+	max-width: 1220px;
+	text-align: center;
+}
+.discover-subtitle {
+	background: url('../img/bg-1.jpg') 521px 3px no-repeat;
+}
+.discover-dox{
+background: url('../img/arr.jpg') right center no-repeat;
+}
+.discover-dox-1{
+background: url('../img/arr-2.jpg') right center no-repeat;
+}
+.discover-text{
+	margin-bottom: 47px;
+}
+.discover-item {
+	display: inline-block;
+	min-width: 380px;
+	margin-bottom: 58px;
+	padding-top: 520px;
+	margin-right: 15px;
+	text-align: left;
+}
+
+.discover-item-1{
+	background: url('../img/1.jpg') 0 0 /380px 500px no-repeat;
+}
+.discover-item-2{
+	background: url('../img/2.jpg') 0 0 /380px 500px no-repeat;
+}
+.discover-item-3{
+	background: url('../img/3.jpg') 0 0 /380px 500px no-repeat;
+	margin-right: 0;
+}
+.discover-item-4{
+	background: url('../img/4.jpg') 0 0 /380px 500px no-repeat;
+	margin-bottom: 0;
+}
+.discover-item-5{
+	background: url('../img/5.jpg') 0 0 /380px 500px no-repeat;
+	margin-bottom: 0;
+}
+.discover-item-6{
+	background: url('../img/6.jpg') 0 0 /380px 500px no-repeat;
+	margin-bottom: 0;
+	margin-right: 0;
+}
+.item-title {
+	color: #37393F;
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 10px;
+	
+}
+.item-data {
+	font-size: 14px;
+	line-height: 1.66;
+	background: url('../img/data.jpg') 0px 0 no-repeat;
+	padding-left: 23px;
+}
+
+
+/* ///////////////////////////india/////////////////////////////////// */
+
+.india {
+	max-width: 1210px;
+	margin: 0 auto 100px;
+	color: #807D7E;
+	font-family: Causten;
+	font-size: 20px;
+	line-height: 1.65;
+	}
+.india-title {
+	color: #3C4242;
+	font-family: Core Sans C;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1.19;
+	letter-spacing: 0.56px;
+	margin-bottom: 30px;
+}
+.india-subtitle {
+	color: #807D7E;
+	font-family: Core Sans C;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.67;
+	letter-spacing: 0.4px;
+	margin-bottom: 25px;
+}
+.india-text {
+	letter-spacing: 0.4px;
+}
+.india-text p{
+	margin-bottom: 20px;
+}
+.india-link {
+	color: #807D7E;
+	font-family: Core Sans C;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.67;
+	letter-spacing: 0.4px;
+}
+
+
+
+/* ///////////////////////////everyday/////////////////////////////////// */
+
+
+.everyday {
+	max-width: 1240px;
+	margin: 0 auto 100px;
+	font-size: 0;
+}
+.everyday-blok-1 {
+	max-width: 620px;
+	display: inline-block;
+	background: url('../img/everyday-1.jpg') 0 0 no-repeat;
+	padding: 183px 74px 174px;
+	vertical-align: top;
+}
+.everyday-blok-2 {
+	width: 620px;
+	height: 620px;
+	display: inline-block;
+	background: url('../img/everyday-2.jpg') 0 0 no-repeat;
+}
+.everyday-title {
+	color: #FFF;
+	font-family: Core Sans C;
+	font-size: 34px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 1.47;
+	letter-spacing: 0.208px;
+	margin-bottom: 30px;
+	}
+.everyday-text {
+	color: #FFF;
+	font-family: Causten;
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	margin-bottom: 50px;
+}
+
+.everyday-block-link{
+	padding: 12px 44px;
+	background: #FFF;
+	display: inline-block;
+}
+.everyday-link {
+	color: #3C4242;
+	text-align: center;
+	font-family: Causten;
+	font-weight: 600;
+
+}
+
