@@ -262,12 +262,14 @@ background: url('../img/arr-2.jpg') right center no-repeat;
 	background: url('../img/everyday-1.jpg') 0 0 no-repeat;
 	padding: 183px 74px 174px;
 	vertical-align: top;
+	border-radius: 10px 0 0 10px;
 }
 .everyday-blok-2 {
 	width: 50%;
 	height: 100%;
 	display: inline-block;
 	background: url('../img/everyday-2.jpg') 0 0 no-repeat;
+	border-radius: 0px 10px 10px 0;
 }
 .everyday-title {
 	color: #FFF;
