@@ -1,0 +1,14 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body{
+	font-size: 40px;
+}
+a{
+	text-decoration: underline;
+	color: #ee0a0a;
+}
