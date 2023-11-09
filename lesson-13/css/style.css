@@ -12,7 +12,7 @@ body {
 }
 
 [class*="__container"] {
-	max-width: 800px;
+	max-width: 1000px;
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -25,8 +25,10 @@ body {
 
 
 /* ------------------------------------------car---------------------- */
-
-.car {}
+.car {
+	margin-bottom: 200px;
+	border-bottom: 5px solid;
+}
 .car__container {
 }
 .car__body {
@@ -162,3 +164,155 @@ body {
 	background-color: #101010;
 	margin-left:110px;
 }
+
+
+
+
+
+/* /* -----------------------------.practic {}---------------------- */
+
+
+.practic {
+	margin-bottom: 200px;
+}
+.practic__container {}
+
+.blok {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	background-color: cornflowerblue;
+	opacity: 0.5;
+	margin-right: 20px;
+	margin-bottom: 30px;
+}
+.sub-blok {
+	font-size: 30px;
+	text-align: center;
+	color: #0a0a0a;
+	width: 200px;
+	height: 200px;
+	background-color: darkgoldenrod;
+	transform: translate(10px, 10px);
+}
+
+.sub-blok:hover{
+	transform: translate(0, 0);
+}
+
+
+.sub-blok--a {
+	font-size: 30px;
+	text-align: center;
+	color: #0a0a0a;
+	width: 200px;
+	height: 200px;
+	background-color: darkgoldenrod;
+	transform: rotate(10deg);
+}
+
+.sub-blok--a:hover{
+	transform: rotate(0);
+}
+
+
+.sub-blok--q{
+	font-size: 30px;
+	text-align: center;
+	color: #0a0a0a;
+	width: 200px;
+	height: 200px;
+	background-color: darkgoldenrod;
+	transform: scale(0.8)
+}
+
+.sub-blok--q:hover{
+	transform: scale(1);
+}
+
+
+.sub-blok--w{
+	font-size: 30px;
+	text-align: center;
+	color: #0a0a0a;
+	width: 200px;
+	height: 200px;
+	background-color: darkgoldenrod;
+	transform: skewY(10deg);
+}
+
+.sub-blok--w:hover{
+	transform:skewY(0);
+}
+
+.sub-blok--e{
+	font-size: 30px;
+	text-align: center;
+	color: #0a0a0a;
+	width: 200px;
+	height: 200px;
+	background-color: darkgoldenrod;
+	transform: translate(5px, 5px) scale(0.8) rotate(30deg) skew(5deg, 5deg);
+}
+
+.sub-blok--e:hover{
+	transform:translate(0,0) scale(1) rotate(0) skew(0, 0);
+}
+
+.sub-blok--r{
+	font-size: 30px;
+	text-align: center;
+	color: #0a0a0a;
+	width: 200px;
+	height: 200px;
+	background-color: darkgoldenrod;
+	transform-origin: 0 0;
+	transform: rotate(20deg);
+}
+
+.sub-blok--r:hover{
+	transform: rotate(0);
+}
+
+
+.blok--t {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	background-color: cornflowerblue;
+	opacity: 0.5;
+	margin-right: 20px;
+	margin-bottom: 30px;
+
+	perspective: 300px;
+	perspective-origin:center;
+}
+.sub-blok--t {
+	font-size: 30px;
+	text-align: center;
+	color: #0a0a0a;
+	width: 200px;
+	height: 200px;
+	background-color: darkgoldenrod;
+	transform: rotateX(50deg);
+}
+
+.sub-blok--t:hover{
+	transform: rotateX(0);
+}
+
+
+.sub-blok--y {
+	font-size: 30px;
+	text-align: center;
+	color: #0a0a0a;
+	width: 200px;
+	height: 200px;
+	background-color: darkgoldenrod;
+	transform: translate3d(50px, 50px, 60px);
+}
+
+.sub-blok--y:hover{
+	transform: translate3d(0, 0, 0);
+}
+
