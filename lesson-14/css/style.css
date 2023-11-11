@@ -1,0 +1,385 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	font-family: "Inter", sans-serif;
+	color: #7D7D7D;
+	font-size: 18px;
+}
+
+[class*="__container"] {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+
+/* ------------------------------------------car---------------------- */
+.car {
+	margin-bottom: 200px;
+	background: url(../img/road.jpg) center no-repeat;
+}
+.car__container {
+	padding-bottom: 200px;
+}
+.car__body {
+	font-size: 0;
+	position: relative;
+	padding-top: 200px;
+	left: 1000px;
+	
+
+
+	
+
+	animation-name: car-go, car-top;
+	animation-duration: 3s, 1s;
+	animation-timing-function: linear;
+	 animation-iteration-count:1, 2; /*infinite */
+	animation-direction: normal, alternate;
+ /* ***normal*** — за замовченням, програвання від 0% до 100%;
+	 ***reverse*** — зі 100% до 0%;
+	***alternate*** — починає з 0%, доходить до кінця, повертається до 0% і так по колу. Тобто анімація іде у двох напрямках (вперед та назад), а не починається знову. Гарний варіант, щоб замкнути анімацію.
+	***alternate-reverse** — те саме, тільки почне з 45%.* */
+	animation-play-state: running;
+/* - ***running*** — за замовченням, тобто анімація іде;
+- ***paused*** — зупинити анімацію; */
+	animation-delay: 1s, 4s;
+	animation-fill-mode: forwards, none;
+/* ***none*** — нічого не використовується;
+	***forwards*** — коли анімація закінчилась, то засовуються кінцеві властивості (в 100%);
+	***backwards*** — початкові значення (0%);
+	***both*** — початкові значення об'єкта + кінцеві значення анімації. */
+}
+
+.car img{
+	animation: rule 3s linear 1 normal running 1s forwards;
+}
+
+
+
+@keyframes car-go {
+	0% {
+		transform: translateX(0); 
+	}
+	100% {
+		transform: translateX(-800px);
+	}
+}
+
+@keyframes car-top {
+	0% {
+		transform: rotate(0deg); 
+	}
+	100% {
+		transform: rotate(24deg);
+	}
+}
+
+@keyframes rule {
+	0% {
+		transform: rotate(0deg); 
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+
+
+
+
+
+
+.car__head {
+	background-color: #f50b0b;
+	border-radius: 55% 10% 0% 6% / 21% 0% 39% 5% ;
+	width: 200px;
+	height: 300px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+	position: relative;
+}
+.car__head::after{
+	content: "";
+	background: url(../img/grl.jpg) no-repeat center / 100px;
+	width: 70px;
+	height: 150px;
+	position: absolute;
+	top: 40px;
+	left: 120px;
+	border-radius: 6px;
+}
+.car__head:hover::after{
+	background: url(../img/grl.jpg) no-repeat center / 150px;
+}
+.car__head::before{
+	content: "";
+	width: 15px;
+	height: 25px;
+	background-color: hwb(61 3% 2%);
+	border-radius: 10px;
+	bottom: 33px;
+	position: absolute;
+}
+.car__head img{
+	position: absolute;
+	width: 100px;
+	border-radius: 50%;
+	bottom: -50px;
+	left: 10px;
+}
+
+
+.car__window{
+	width: 100px;
+	height: 100px;
+	background-color: aquamarine;
+	border: 3px solid;
+	border-radius: 100% 0% 100% 0% / 9% 100% 0% 91% ;
+	position: absolute;
+	top: 50px;
+	left: 10px;
+}
+.car__window::before{
+	content: "";
+	width: 3px;
+	height: 100px;
+	background-color: #171616;
+	bottom: -90px;
+	left: -3px;
+	position: relative;
+}
+.car__window::after{
+	content: "";
+	width: 3px;
+	height: 100px;
+	background-color: #171616;
+	bottom: -90px;
+	right: -91px;
+	position: relative;
+}
+.car__trailer{
+	background-color: #edb6b6;
+	border-radius: 55% 10% 0% 0% / 0% 0% 39% 3%;
+	width: 500px;
+	height: 250px;
+	display: inline-block;
+	position: relative;
+}
+.car__trailer::before{
+	content: "";
+	width: 100%;
+	height: 18px;
+	background-color: #e21313;
+	position: absolute;
+}
+.car__trailer::after{
+	content: "";
+	width: 100%;
+	height: 18px;
+	background-color: #e21313;
+	position: absolute;
+	bottom: -17px;
+}
+
+.car__trailer img{
+	position: absolute;
+	width: 100px;
+	border-radius: 50%;
+	bottom: -100px;
+	right: 10px;
+}
+.car__trailer img:last-child{
+	right: 100px;
+}
+.car__title{
+	font-size: 150px;
+}
+
+.car__tank{
+	width: 200px;
+	height: 80px;
+	position: absolute;
+	background-color: #7A956B;
+	border-radius: 7px;
+	bottom: -15px;
+	left: 200px;
+}
+.car__tank::before{
+	content: "";
+	width: 3px;
+	height: 80px;
+	background-color: #0a0a0a;
+	margin-left: 40px;
+}
+.car__tank::after{
+	content: "";
+	width: 4px;
+	height: 80px;
+	background-color: #101010;
+	margin-left:110px;
+}
+
+
+
+
+
+/* /* -----------------------------.practic {}---------------------- */
+
+
+.practic {
+	margin-bottom: 200px;
+}
+.practic__container {}
+
+.blok {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	background-color: cornflowerblue;
+	opacity: 0.5;
+	margin-right: 20px;
+	margin-bottom: 30px;
+}
+.sub-blok {
+	font-size: 30px;
+	text-align: center;
+	color: #0a0a0a;
+	width: 200px;
+	height: 200px;
+	background-color: darkgoldenrod;
+	transform: translate(10px, 10px);
+}
+
+.sub-blok:hover{
+	transform: translate(0, 0);
+}
+
+
+.sub-blok--a {
+	font-size: 30px;
+	text-align: center;
+	color: #0a0a0a;
+	width: 200px;
+	height: 200px;
+	background-color: darkgoldenrod;
+	transform: rotate(10deg);
+}
+
+.sub-blok--a:hover{
+	transform: rotate(0);
+}
+
+
+.sub-blok--q{
+	font-size: 30px;
+	text-align: center;
+	color: #0a0a0a;
+	width: 200px;
+	height: 200px;
+	background-color: darkgoldenrod;
+	transform: scale(0.8)
+}
+
+.sub-blok--q:hover{
+	transform: scale(1);
+}
+
+
+.sub-blok--w{
+	font-size: 30px;
+	text-align: center;
+	color: #0a0a0a;
+	width: 200px;
+	height: 200px;
+	background-color: darkgoldenrod;
+	transform: skewY(10deg);
+}
+
+.sub-blok--w:hover{
+	transform:skewY(0);
+}
+
+.sub-blok--e{
+	font-size: 30px;
+	text-align: center;
+	color: #0a0a0a;
+	width: 200px;
+	height: 200px;
+	background-color: darkgoldenrod;
+	transform: translate(5px, 5px) scale(0.8) rotate(30deg) skew(5deg, 5deg);
+}
+
+.sub-blok--e:hover{
+	transform:translate(0,0) scale(1) rotate(0) skew(0, 0);
+}
+
+.sub-blok--r{
+	font-size: 30px;
+	text-align: center;
+	color: #0a0a0a;
+	width: 200px;
+	height: 200px;
+	background-color: darkgoldenrod;
+	transform-origin: 0 0;
+	transform: rotate(20deg);
+}
+
+.sub-blok--r:hover{
+	transform: rotate(0);
+}
+
+
+.blok--t {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	background-color: cornflowerblue;
+	opacity: 0.5;
+	margin-right: 20px;
+	margin-bottom: 30px;
+
+	perspective: 300px;
+	perspective-origin:center;
+}
+.sub-blok--t {
+	font-size: 30px;
+	text-align: center;
+	color: #0a0a0a;
+	width: 200px;
+	height: 200px;
+	background-color: darkgoldenrod;
+	transform: rotateX(50deg);
+}
+
+.sub-blok--t:hover{
+	transform: rotateX(0);
+}
+
+
+.sub-blok--y {
+	font-size: 30px;
+	text-align: center;
+	color: #0a0a0a;
+	width: 200px;
+	height: 200px;
+	background-color: darkgoldenrod;
+	transform: translate3d(50px, 50px, 60px);
+}
+
+.sub-blok--y:hover{
+	transform: translate3d(0, 0, 0);
+}
+
