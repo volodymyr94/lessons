@@ -28,24 +28,25 @@ body {
 .car {
 	margin-bottom: 200px;
 	background: url(../img/road.jpg) center no-repeat;
+	/* max-width: 3000px; */
 }
 .car__container {
-	padding-bottom: 200px;
+	height: 1000px;
 }
 .car__body {
 	font-size: 0;
 	position: relative;
-	padding-top: 200px;
+	top: 300px;
 	left: 1000px;
 	
 
 
 
 
-	animation-name: car-go, car-top;
-	animation-duration: 3s, 0.5s;
+	animation-name: car-go, car-top, car-out;
+	animation-duration: 3s, 0.5s, 3s;
 	animation-timing-function: linear;
-	 animation-iteration-count:1, 2; /*infinite */
+	animation-iteration-count:1, 2; /*infinite */
 	animation-direction: normal, alternate;
  /* ***normal*** — за замовченням, програвання від 0% до 100%;
 	 ***reverse*** — зі 100% до 0%;
@@ -54,7 +55,7 @@ body {
 	animation-play-state: running;
 /* - ***running*** — за замовченням, тобто анімація іде;
 - ***paused*** — зупинити анімацію; */
-	animation-delay: 0.5s, 3.5s;
+	animation-delay: 0.5s, 3.5s, 4s;
 	animation-fill-mode: forwards, none;
 /* ***none*** — нічого не використовується;
 	***forwards*** — коли анімація закінчилась, то засовуються кінцеві властивості (в 100%);
@@ -62,29 +63,97 @@ body {
 	***both*** — початкові значення об'єкта + кінцеві значення анімації. */
 }
 
-.car img{
-	animation: rule 3s linear 1 normal running 1s forwards;
+.car .car__rule{
+	animation: rule 3s linear 1 normal running 0.5s forwards;
+}
+.car__police{
+	width: 200px;
+	height: 400px;
+	
+	position: absolute;
+	left: -330px;
+	top: 300px;
+
+	animation: police 1.5s linear 1 normal running 2s forwards, police-out 4s linear 1 normal running 6s forwards;
+}
+.car__police::before{
+	content: "втік курва";
+	font-size: 35px;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 30%;
+	position:absolute ;
+	left: 100px;
+	width: 200px;
+	opacity: 0;
+
+	animation: police-mgg  2s linear 1 normal running 8s forwards;
+
 }
 
+.car__police img{
+	width: 100%;
+	height: 100%;
+}
 
-
-@keyframes car-go {
+@keyframes police {
 	0% {
 		transform: translateX(0); 
 	}
 	100% {
-		transform: translateX(-800px);
+		transform: translateX(430px);
+	}
+	
+} 
+@keyframes police-out {
+	0% {
+		left:0; 
+	}
+	100% {
+		left: 1100px;
+	}
+	
+}
+
+@keyframes police-mgg {
+	0% {
+		opacity: 0; 
+	}
+	100% {
+		opacity: 1;
+	}
+	
+}
+
+@keyframes car-go {
+	0% {
+		left: 1000px; 
+	}
+	100% {
+		left: 300px;
 	}
 }
 
 @keyframes car-top {
 	0% {
-		transform: rotate(0deg); 
+		transform: rotate(0); 
 	}
 	100% {
-		transform: rotate(24deg);
+		transform: rotate(25deg);
 	}
 }
+
+@keyframes car-out {
+	0% {
+		opacity: 1; 
+	}
+	100% {
+		opacity:  0;
+	}
+}
+
+
+
 
 @keyframes rule {
 	0% {
