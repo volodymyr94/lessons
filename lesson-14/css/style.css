@@ -40,10 +40,10 @@ body {
 	
 
 
-	
+
 
 	animation-name: car-go, car-top;
-	animation-duration: 3s, 1s;
+	animation-duration: 3s, 0.5s;
 	animation-timing-function: linear;
 	 animation-iteration-count:1, 2; /*infinite */
 	animation-direction: normal, alternate;
@@ -54,7 +54,7 @@ body {
 	animation-play-state: running;
 /* - ***running*** — за замовченням, тобто анімація іде;
 - ***paused*** — зупинити анімацію; */
-	animation-delay: 1s, 4s;
+	animation-delay: 0.5s, 3.5s;
 	animation-fill-mode: forwards, none;
 /* ***none*** — нічого не використовується;
 	***forwards*** — коли анімація закінчилась, то засовуються кінцеві властивості (в 100%);
