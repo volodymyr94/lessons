@@ -9,7 +9,7 @@
 body {
 	font-family: "Causten", sans-serif;
 	color: #2A2F2F;
-	font-size: 18 px;
+	font-size: 18px;
 }
 .wrapper {
 	min-height: 100%;
@@ -74,7 +74,7 @@ body {
 	position: absolute;
 	padding: 7px 10px;
 	right: 0;
-	opacity: o;
+	opacity: 0;
 	transition: opacity 0.6s;
 
 }
@@ -111,7 +111,7 @@ body {
 .heder-link-w:hover{
 	color: #FFF;
 	background: #8A33FD;
-	border-radius: none;
+	border-radius: 0;
 	border: 1px solid transparent;
 }
 
@@ -211,9 +211,9 @@ body {
 }
 .item-men__text {
 	color: #7F7F7F;
-	font-size: 14;
+	font-size: 14px;
 	font-weight: 500;
-	line-height: 2,08; /* 208.333% */
+	line-height: 2.08; /* 208.333% */
 	letter-spacing: -0.536px;
 }
 
