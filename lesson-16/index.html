@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson-16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>header</header>
+		<main class="page">
+			<section class="info">
+				<div class="info__container">
+					<div class="info__content">
+						<h1 class="info__title">My Info</h1>
+						<a class="info__link" href="#">Add Address</a>
+						<div class="iffo__main">
+							<form id="info-form" enctype="multipart/form-data" method="GET" class="info__form" action="#">
+								<div class="info-row">
+									<div class="info__line">
+										<label class="info__label" for="first-name"> First Name*</label>
+										<input class="info__input" required id="first-name" autocomplete="off" name="first-name" placeholder="  first-name" maxlength="15" type="text">
+									</div>
+									<div class="info__line">
+										<label class="info__label" for="last-name">last Name*</label>
+										<input class="info__input" required id="last-name" autocomplete="off" name="last-name" placeholder="last-name" maxlength="15" type="text">
+									</div>
+								</div>
+								<div class="info-row">
+									<div class="info__line">
+										<label class="info__label" for="country"> Country / Region*</label>
+										<input class="info__input" required id="country" autocomplete="off" name="country" placeholder="   Country / Region*"  type="text">
+									</div>
+									<div class="info__line">
+										<label class="info__label" for="company">Company Name</label>
+										<input class="info__input" id="company" autocomplete="off" name="company" placeholder="Company Name"  type="text">
+									</div>
+								</div>
+								
+								<div class="info-row">
+									<div class="info__line">
+										<label class="info__label" for="address">Street Address*</label>
+										<input class="info__input" id="address" required autocomplete="off" name="address" placeholder="House number and street name" type="text">
+									</div>
+									<div class="info__line">
+										<label class="info__label" for="apt">Apt, suite, unit</label>
+										<input class="info__input" id="apt" autocomplete="off" name="last-name" placeholder="apartment, suite, unit, etc. (optional)" maxlength="15" type="text">
+									</div>
+								</div>
+
+								<div class="info-row">
+									<div class="info__line">
+										<label class="info__label" for="city">City*</label>
+										<input class="info__input" id="city" required autocomplete="off" name="city" placeholder="city / town" type="text">
+									</div>
+									<div class="info__line">
+										<label class="info__label" for="city">State*</label>
+										<select class="info-list">
+											<option value="01">option №1</option>
+											<option value="02">option №2</option>
+											<option selected value="03">option №3</option>
+											<option value="04">option №4</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="info-row">
+									<div class="info__line">
+										<label class="info__label" for="phone">Phone*</label>
+										<input class="info__input" id="phone" required autocomplete="off" name="phone" placeholder="phone" type="tel">
+									</div>
+									<div class="info__line">
+										<label class="info__label" for="postal">Postal Code*</label>
+										<input class="info__input" id="postal" autocomplete="off" name="last-name" placeholder="Postal Code" maxlength="15" type="password">
+									</div>
+								</div>
+
+								<div class="info-row">
+									<div class="info__line line-info__textarea ">
+										<label class="info__label" for="delivery">Delivery Instruction</label>
+										<textarea class="info__textarea" placeholder="Delivery Instruction" id="delivery" name="delivery"></textarea>
+									</div>
+								</div>
+
+								<div class="info__checkbox checkbox-info">
+									<div class="checkbox-info__line">
+										<input class="checkbox__input" checked id="check" name="car" type="checkbox">
+										<label class="checkbox__label" for="check">Set as default shipping address</label>
+									</div>
+									<div class="checkbox-info__line">
+										<input class="checkbox__input" id="check-2" name="flat" type="checkbox">
+										<label class="checkbox__label" for="check-2">Set as default billing address</label>
+									</div>
+								</div>
+
+								<div class="info__buttons buttons-info">
+									<button class="buttons-info__save buttons-info__button" form="info-form" type="submit">Save</button>
+									<button class="buttons-info__cancel buttons-info__button" type="reset">Cancel</button>
+								</div>
+
+
+								
+
+
+
+							</form>
+						</div>
+
+						
+						
+					</div>
+				</div>
+			</section>
+
+			<section class="check">
+				<div class="check__container">
+					<div class="check__out">
+						<h2 class="check__title">Check Out</h2>
+						<h3 class="check__link">Add Address</h3>
+						<div class="iffo__main">
+							<form id="check-form" enctype="multipart/form-data" method="GET" class="check__form" action="#">
+								<div class="info-row">
+									<div class="info__line">
+										<label class="info__label" for="first-name"> First Name*</label>
+										<input class="info__input" required id="first-name" autocomplete="off" name="first-name" placeholder="  first-name" maxlength="15" type="text">
+									</div>
+									<div class="info__line">
+										<label class="info__label" for="last-name">last Name*</label>
+										<input class="info__input" required id="last-name" autocomplete="off" name="last-name" placeholder="last-name" maxlength="15" type="text">
+									</div>
+								</div>
+								<div class="info-row">
+									<div class="info__line">
+										<label class="info__label" for="country"> Country / Region*</label>
+										<input class="info__input" required id="country" autocomplete="off" name="country" placeholder="   Country / Region*" type="text">
+									</div>
+									<div class="info__line">
+										<label class="info__label" for="company">Company Name</label>
+										<input class="info__input" id="company" autocomplete="off" name="company" placeholder="Company Name" type="text">
+									</div>
+								</div>
+								<div class="info-row">
+									<div class="info__line">
+										<label class="info__label" for="address">Street Address*</label>
+										<input class="info__input" id="address" required autocomplete="off" name="address" placeholder="House number and street name" type="text">
+									</div>
+									<div class="info__line">
+										<label class="info__label" for="apt">Apt, suite, unit</label>
+										<input class="info__input" id="apt" autocomplete="off" name="last-name" placeholder="apartment, suite, unit, etc. (optional)" maxlength="15" type="text">
+									</div>
+								</div>
+
+								<div class="info-row check__row">
+									<div class="info__line check__line">
+										<label class="info__label check__label" for="city">City*</label>
+										<input class="info__input check__input" id="city" required autocomplete="off" name="city" placeholder="city / town" type="text">
+									</div>
+									<div class="info__line check__line">
+										<label class="info__label check__label" for="city">State*</label>
+										<select class="info-list check__list">
+											<option value="01">option №1</option>
+											<option value="02">option №2</option>
+											<option selected value="03">option №3</option>
+											<option value="04">option №4</option>
+										</select>
+									</div>
+									<div class="info__line check__line">
+										<label class="info__label check__label" for="city">City*</label>
+										<input class="info__input check__input" id="city" required autocomplete="off" name="city" placeholder="city / town" type="text">
+									</div>
+								</div>
+
+								<div class="info-row">
+									<div class="info__line info__line--fool">
+										<label class="info__label" for="phone">Phone*</label>
+										<input class="info__input" required id="phone" autocomplete="off" name="phone" placeholder="phone" maxlength="15" type="tel">
+									</div>
+								</div>
+								<button class="check-button" form="check-form" type="submit">Continue to delivery</button>
+
+								<div class="check__row">
+									<input class="check__input-checkbox" id="check-2" name="check__input-checkbox" type="checkbox">
+									<label class="check__label-checkbox" for="check__input-checkbox">Save my information for a faster checkout</label>
+								</div>
+
+
+
+
+
+
+
+
+								<div class="check__shipping shipping-check">
+									<h3 class="shipping-check__title check__link ">Shipping Address</h3>
+									<h4 class="shipping-check__subtitle subtitle"> Select the address that matches your card or payment method </h4>
+									<div class="shipping-check__main">
+										<div class="shipping-check__radio">
+											<input checked id="model-01" name="model" value="merc" type="radio">
+											<label for="model-01">Same as Billing address</label>
+										</div>
+										<div class="shipping-check__radio">
+											<input id="model-02" name="model" value="bmw" type="radio">
+											<label for="model-02">Use a different shipping address</label>
+										</div>
+									</div>
+								</div>
+								<div class="check__method method-check">
+									<h3 class="method-check__title check__link ">Shipping Method</h3>
+									<div class="method-check__main">
+										<div class="method-check__radio">
+											<h5>Arrives by Monday, June 7</h5>
+										</div>
+										<div class="method-check__radio method-check__radio--two">
+											<div class="method-check__left">
+												<H5>Delivery Charges</H5>
+												<H6>Additional fess may apply</H6>
+											</div>
+											<div class="method-check__right">$5.00</div>
+										</div>
+									</div>
+								</div>
+								<div class="check__payment payment-check">
+									<h3 class="payment-check__title check__link ">Payment Method</h3>
+									<h4 class="payment-check__subtitle subtitle"> All transactions are secure and encrypted. </h4>
+									<div class="payment-check__main">
+										<div class="payment-check__radio  payment-check__radio--column">
+											<div class="payment-check__content">
+												<input checked id="credit" name="payment" value="merc" type="radio">
+												<label for="credit">
+													<h5>Credit Card</h5>
+													<span>We accept all major credit cards.</span>
+												</label>
+											</div>
+
+											<div class="payment-check__icons">
+												<div class="payment-check__icon">
+													<img src="img/icon.svg" alt="icon-">
+												</div>
+												<div class="payment-check__icon">
+													<img src="img/icon.svg" alt="icon-">
+												</div>
+												<div class="payment-check__icon">
+													<img src="img/icon.svg" alt="icon-">
+												</div>
+												<div class="payment-check__icon">
+													<img src="img/icon.svg" alt="icon-">
+												</div>
+												
+												
+											</div>
+											
+											<!-- payment--------------- -->
+											<div class="info-row">
+												<div class="info__line">
+													<input class="info__input payment-check__input " required id="card-number" autocomplete="off" name="card-number" placeholder="Card number" maxlength="15" type="number">
+												</div>
+												<div class="info__line">
+													<input class="info__input payment-check__input" required id="name-card" autocomplete="off" name="name-card" placeholder="Card number" maxlength="15" type="text">
+												</div>
+											</div>
+
+											<div class="info-row">
+												<div class="info__line">
+													<input class="info__input payment-check__input " required id="card-number" autocomplete="off" name="card-number" placeholder="Card number" maxlength="15" type="number">
+												</div>
+												<div class="info__line">
+													<input class="info__input payment-check__input" required id="name-card" autocomplete="off" name="name-card" placeholder="Card number" maxlength="15" type="text">
+												</div>
+											</div>
+											<!-- payment--------------- -->
+										</div>
+										<div class="payment-check__radio">
+											<input id="cash" name="payment" value="bmw" type="radio">
+											<label for="cash">
+												<h5>Cash on delivery</h5>
+												<span>Pay with cash upon delivery.</span>
+											</label>
+										</div>
+										<div class="payment-check__radio">
+											<input id="paypol" name="payment" value="reno" type="radio">
+											<label for="paypol">Paypol</label>
+										</div>
+									</div>
+								</div>
+
+
+							</form>
+						</div>
+					</div>
+
+					
+					
+				</div>
+			</section>
+
+
+
+
+
+
+
+
+
+			<section class="practic">
+					<!-- Головний (батьківський) блок форми -->
+					<!-- 
+												Атрибут action - "адреса" сервера. 
+												Не може бути пустим, варто ставити заглушку (#) 
+											-->
+					<!-- 
+											Атрибут method - метод передачі даних 
+											GET (за замовченням) - безпосередньо в адресному рядку
+											POST - приховано
+							
+											Формат передачі данних з HTML-форми:
+											(так звана пара - ім'я та значення)
+											name=value
+							
+											На сервері обробляються імена та їх значення
+											-->
+					<!-- 
+												Приклад з Google:
+												Шукаємо наприклад "can i use"
+												Отримуємо адресний рядок:
+												https://www.google.com/search?q=can+i+use&...інші дані...
+							
+												Дані передались методом GET
+							
+												https://www.google.com/search - значення атрибуту action форми
+												? - відокремлення адреси від даних
+												q - ім'я поля куди ми вводили пошуковий запит
+												can+i+use - це данні які ми ввели
+							
+												Передається пара - q=can+i+use
+											-->
+					<!-- 
+											Атрибут enctype - 
+											кодування даних під час відправки на сервер.
+											Для передачі файлів 
+											використовуємо - multipart/form-data
+											Детальніше: 
+											https://www.w3schools.com/tags/att_form_enctype.asp
+											-->
+					<!-- 
+											Тег form - блочний
+											Тег label - рядковий
+											Теги input, textarea, button - блочно-рядкові
+											-->
+					<form id="some-form" enctype="multipart/form-data" method="GET" class="form" action="#">
+						<!-- 
+													input - Багатофункціональний елемент вводу даних.
+													Атрибут type - тип елементу вводу даних (Усі типи https://www.w3schools.com/html/html_form_input_types.asp)
+													Атрибут name - ім'я поля (даних)
+													Атрибут value - значення поля (дані)
+													Атрибут placeholder - підпис поля
+													Атрибут autocomplete - дозволяє (за замовченням) / забороняє (значення off) автозаповнення поля
+													Атрибут required - обо'язково для заповнення
+													Атрибут tabindex - керує навігацією за допомогою TAB
+													Атрибут maxlength - максимальна кількість символів доступних для вводу
+													Атрибут minlength - вимога до мінімальної кількості символів. працює в парі з required
+													Атрибут checked (для деяких типів) - вибраний за замовченням
+													Атрибут disabled - поле перестає бути доступним для користування, данні передані не будуть
+													-->
+						<div class="form__line">
+							<label for="some-id">text</label>
+							<input id="some-id" autocomplete="off" name="name" placeholder="Введіть своє ім'я" type="text">
+						</div>
+						<div class="form__line">
+							<!-- Тип email - Однорядковий ввід поштової адреси -->
+							<label for="mail">email</label>
+							<input id="mail" name="mail" type="email">
+						</div>
+						<div class="form__line">
+							<label for="phone">tel</label>
+							<input id="phone" autocomplete="off" name="phone" type="tel">
+						</div>
+						<div class="form__line">
+							<label for="pass">password</label>
+							<input id="pass" autocomplete="off" name="pass" type="password">
+						</div>
+						<div class="form__line">
+							<label for="digi">number</label>
+							<input id="digi" autocomplete="off" placeholder="Введіть свій вік" name="digi" type="number">
+						</div>
+						<div class="form__line">
+							<label for="color">color</label>
+							<input id="color" name="color" type="color">
+						</div>
+						<div class="form__line">
+							<label for="search">search</label>
+							<input id="search" name="search" type="search">
+						</div>
+						<div class="form__line">
+							<label for="date">date</label>
+							<input id="date" name="date" type="date">
+						</div>
+						<div class="form__line">
+							<label for="range">range</label>
+							<input id="range" value="0" name="range" type="range">
+						</div>
+						<div class="form__line">
+							<div class="form__checkbox checkbox">
+								<input class="checkbox__input" checked id="check" name="car" type="checkbox">
+								<label class="checkbox__label" for="check">checkbox</label>
+							</div>
+							<div class="form__checkbox checkbox">
+								<input class="checkbox__input" id="check-2" name="flat" type="checkbox">
+								<label class="checkbox__label" for="check-2">checkbox-2?</label>
+							</div>
+						</div>
+						<div class="form__line">
+							<!-- Тип radio - одиночний вибір -->
+							<!-- Для однієї групи радіо кнопок має бути одинакове значення атрибуту name -->
+							<!-- Варто вказувати значення атрибуту value -->
+							<fieldset class="form__group">
+								<legend class="form__title">Улюблена марка авто</legend>
+								<div class="form__radio">
+									<input checked id="model-01" name="model" value="merc" type="radio">
+									<label for="model-01">radio-1</label>
+								</div>
+								<div class="form__radio">
+									<input id="model-02" name="model" value="bmw" type="radio">
+									<label for="model-02">radio-2</label>
+								</div>
+							</fieldset>
+						</div>
+						<div class="form__line">
+							<label for="file">file</label>
+							<input multiple accept=".jpg, .png" id="file" name="some-file" type="file">
+						</div>
+						<div class="form__line">
+							<label for="message">textarea</label>
+							<textarea class="form__textarea" id="message" name="message"></textarea>
+						</div>
+						<div class="form__line">
+							<select name="list">
+								<option value="01">select > option №1</option>
+								<option value="02">select > option №2</option>
+								<option selected value="03"> select > option №3</option>
+								<option value="04">select > option №4</option>
+							</select>
+						</div>
+						<div class="form__line">
+							<button type="button">Я просто кнока button</button><br>
+							<button type="reset">Я кнока яка чистить форму reset</button><br>
+							<button type="submit">Я кнопка яка відправляє форму submit</button>
+						</div>
+					</form>
+					<button form="some-form" type="submit">Відправити some-form</button>
+			</section>
+		</main>
+		<footer>footer</footer>
+	</div>
+</body>
+
+</html>
+
