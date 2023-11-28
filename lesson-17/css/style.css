@@ -1,0 +1,266 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+body {
+
+	color: #000;
+	font-family: "Inter";
+	font-size: 16px;
+
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+[class*="__container"] {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/*---------------------------------- bem------------------------------- */
+.title{
+	font-family: "DM Serif Text";
+	font-size: 58px;
+	
+}
+.title--center{
+	text-align: center;
+}
+.title--white{
+	color:#fff
+}
+.label{
+	color: #606060;
+	font-size: 20px;
+	line-height: 1.8;
+}
+.label--center{
+	text-align: center;
+}
+.label--white{
+	color: #EBEBEB;
+}
+
+.sub-lebel{
+	font-family: "Cormorant Infant";
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.4;
+}
+/*---------------------------------- popular------------------------------- */
+
+.popular {
+	padding-top: 125px;
+	margin-bottom: 200px;
+}
+.popular__container {
+}
+.popular__title {
+	
+	margin-bottom: 27px;
+}
+.popular__label {
+	margin-bottom: 60px;
+}
+
+.popular__items {
+   display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.popular__column{
+	padding: 0 15px;
+	flex: 1 0 33.333%;
+}
+
+.popular__item {}
+.item-popular {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+
+
+.item-popular__img {
+	margin-bottom: 15px;
+	aspect-ratio: 359 / 242;
+	background-color: #666;
+
+	overflow: hidden;
+	
+}
+.item-popular__img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: all 0.5s;
+}
+.item-popular__img img:hover{
+	transform: scale(1.1);
+}
+.item-popular__sub-title {
+	font-family: "DM Serif Text";
+	font-size: 24px;
+	line-height: 1.2;
+	margin-bottom: 16px;
+}
+.item-popular__text {
+	line-height: 1.6;
+	margin-bottom: 8px;
+   max-height: 81px;
+	overflow: hidden;
+}
+.item-popular__text:hover{
+	overflow: visible;
+}
+.item-popular__link {
+	color: #F55529;
+	font-weight: 800;
+	line-height:1.5;
+	display: flex;
+	justify-content: space-between;
+	transition: all 0.3s;
+
+}
+.item-popular__link:hover{
+	text-decoration: underline;
+}
+.item-popular__link::after{
+	content:"";
+	background: url(../img/popular/arr.svg);
+	width: 24px;
+	height: 24px;
+}
+.item-popular__link:hover::after{
+	transform: scale(1.1);
+}
+
+@media(max-width: 990.98px){
+	.popular__column{
+		flex: 1 0 50%;
+		max-width: 50%;
+	}
+}
+	
+@media(max-width: 600px){
+	.popular__column{
+		flex: 1 0 100%;
+		max-width: 100%;
+	}
+}
+	
+
+
+
+/* -----------------------------------.most------------------------------- */
+
+
+.most {
+	margin-bottom: 165px;
+}
+.most__container {}
+.most__title {
+	margin-bottom: 27px;
+}
+.most__label {
+	margin-bottom: 62px;
+}
+.most__items {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.most__column {
+	padding: 0 15px;
+	flex: 1 0 25%;
+}
+.most__item {}
+.item-most {
+	display: flex;
+	flex-direction: column;
+}
+.item-most a:hover{
+	text-decoration: underline;
+}
+.item-most__img {
+	margin-bottom: 17px;
+	aspect-ratio: 271 / 270;
+	background-color: #666;
+	object-fit: cover;
+
+	overflow: hidden;
+}
+.item-most__img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	transition: transform 0.5s;
+}
+.item-most__img img:hover{
+	transform: scale(1.1);
+}
+.item-most__sub-lebel {
+	margin-bottom: 4px;
+}
+.item-most__price {
+	font-family: "Cormorant Infant";
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+
+@media(max-width: 990.98px){
+	.most__column{
+		flex: 1 0 50%;
+		max-width: 50%;
+	}
+}
+	
+@media(max-width: 600px){
+	.most__column{
+		flex: 1 0 100%;
+		max-width: 100%;
+	}
+}
+	
+
+
+
+
+/*-------------------------- our------------------------------- */
+
+
+.most--black{
+	color: #fff;
+	background: #0E333D;
+	padding-top: 94px;
+	padding-bottom: 94px;
+	margin-bottom: 140px;
+}
+.most__label--black{
+	margin-bottom: 31px;
+}
+.most__list {
+	display: flex;
+	justify-content: center;
+	column-gap: 41px;
+	margin-bottom: 77px;
+}
+.most__link {}
+
+.most__link a{}
